@@ -1,0 +1,11 @@
+/* font */
+@import url("https://webfontworld.github.io/TheJamsil/TheJamsil.css");
+@import url("https://webfontworld.github.io/cookierun/CookieRun.css");
+@import url("https://webfontworld.github.io/NexonMabinogi/MabinogiClassic.css");
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+@font-face {
+  font-family: "DNFBitBitv2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf") format("opentype");
+}
