@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* 테마2 */
+/* font */
+@import url("https://webfontworld.github.io/TheJamsil/TheJamsil.css");
+@import url("https://webfontworld.github.io/cookierun/CookieRun.css");
+@import url("https://webfontworld.github.io/NexonMabinogi/MabinogiClassic.css");
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+@font-face {
+  font-family: "DNFBitBitv2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf") format("opentype");
+}
+* {
+  font-size: 10px;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background-color: #ffbd51;
+}
+
+.tip {
+  display: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* 프레임 */
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  width: 1300px;
+  height: 800px;
+  padding: 25px 40px;
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.inner .page.active {
+  opacity: 1;
+  z-index: 10;
+}
+
+.inner > div {
+  opacity: 0;
+  width: 1217px;
+  height: 750px;
+  position: absolute;
+  border-radius: 30px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.inner > div.loading {
+  opacity: 1;
+  z-index: 10;
+}
+
+/* button */
+.btn,
+.BtnsBox {
+  position: absolute;
+}
+
+/* prev, next 버튼 */
+.btn {
+  cursor: pointer;
+  width: 110px;
+  height: 85px;
+  left: 108px;
+  border: 3px solid #50001b;
+  border-radius: 25px;
+  background-color: #fc7da8;
+  background-repeat: no-repeat;
+  box-shadow: 0px 10px 1px #cc4371;
+}
+.btn:hover {
+  transform: translateY(10px);
+  box-shadow: 0px 0px 1px #cc4371;
+}
+.btn.prev {
+  top: 265px;
+  background-image: url(../images/Button_prev.png);
+}
+.btn.next {
+  top: 390px;
+  background-image: url(../images/Button_next.png);
+}
+
+/* page 이동 버튼 */
+.BtnsBox {
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Btns {
+  cursor: pointer;
+  margin-bottom: 3rem;
+  padding: 10px 40px;
+  border: 3px solid #8b0f00;
+  border-radius: 3rem;
+  background-color: #fd5a47;
+  box-shadow: 0px 6px 1px #fd5a47;
+  text-align: center;
+  font-size: 23px;
+  font-family: "DNFBitBitv2";
+  color: #fff;
+}
+.Btns:hover {
+  transform: translateY(6px);
+  box-shadow: 0px 0px 1px #fd5a47;
+}
+.Btns:nth-child(2) {
+  border-color: #004265;
+  background-color: #008ed9;
+  box-shadow: 0px 6px 1px #03699f;
+}
+.Btns:nth-child(2):hover {
+  box-shadow: 0px 0px 1px #03699f;
+}
+.Btns:nth-child(3) {
+  border-color: #003722;
+  background-color: #01985e;
+  box-shadow: 0px 6px 1px #00633d;
+}
+.Btns:nth-child(3):hover {
+  box-shadow: 0px 0px 1px #003722;
+}
+.Btns:nth-child(4) {
+  border-color: #b2003c;
+  background-color: #fc7da8;
+  box-shadow: 0px 6px 1px #cc4371;
+}
+.Btns:nth-child(4):hover {
+  box-shadow: 0px 0px 1px #cc4371;
+}
+.Btns:nth-child(5) {
+  border-color: #1d0656;
+  background-color: #8e5fff;
+  box-shadow: 0px 6px 1px #552cb8;
+}
+.Btns:nth-child(5):hover {
+  box-shadow: 0px 0px 1px #552cb8;
+}
