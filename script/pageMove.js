@@ -1,12 +1,12 @@
 const Load = document.querySelector(".loading-wrap");
 setTimeout(function () {
   Load.style.display = "none";
-}, 3000);
+}, 1500);
 
 const tip = document.querySelector(".tip");
 setTimeout(function () {
   tip.style.display = "block";
-}, 3000);
+}, 1500);
 tip.addEventListener("click", function () {
   this.style.display = "none";
   const IntroTitle = document.querySelector(".Intro-titleBox");
